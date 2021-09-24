@@ -1,0 +1,18 @@
+<div class="container" *ngIf="!userFound" >
+    <h1> {{ title }} </h1>
+
+    <div class="inputBox">
+        <input type="text" name="username" [(ngModel)]="username" class="inputField">
+        <button mat-flat-button color="warn" class="inputField" (click)="getResults()">Find User</button>
+    </div>
+</div>
+
+<div class="detailsContainer" *ngIf="userFound" >
+    <app-main
+        (resetEvent)="reset()"
+        [username]="username"
+        [userDetails]="userDetails"
+        [userRepositories]="userRepositories"
+        [userRepoTags]="userRepoTags"
+    ></app-main>
+</div>
