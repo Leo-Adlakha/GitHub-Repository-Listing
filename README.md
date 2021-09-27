@@ -42,10 +42,31 @@ Wrote 12 Unit Test to check the basic functionalities of the components. Compone
 
 ## To run this project on your local environment
 
-Follow these steps to run the project on your local.
+Follow these steps to run the project on your local ( MacOS / Linux ) .
 
-1. Clone the github repository to your system.
+Prerequisites -
+
+- [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+
+1. Clone the github repository to your system and change the directory.
 
 ```
-$ git clone 
+$ git clone https://github.com/Leo-Adlakha/GitHub-Repository-Listing.git
+$ cd GitHub-Repository-Listing/
 ```
+
+2. Install all the necessary packages. Install npm to run the following command.
+
+```
+$ npm install
+```
+
+3. Serve the application on your local.
+
+```
+$ ng serve
+```
+
+go to your preferred browser and route to localhost:4200 to open the application.
+
+Thanks! 
