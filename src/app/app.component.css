@@ -24,3 +24,13 @@ input{
 button{
     width: 15%;
 }
+
+.home-button{
+    border: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 40px;
+    background-color: white;
+    width: auto;
+}

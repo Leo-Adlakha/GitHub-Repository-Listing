@@ -1,4 +1,6 @@
-<div class="container" *ngIf="!userFound" >
+<ngb-alert [type]="'danger'" *ngIf="validateUser()" >Please Enter a Valid GitHub Username !</ngb-alert>
+
+<div class="container" *ngIf="!userFound || invalidUser" >
     <h1> {{ title }} </h1>
 
     <div class="inputBox">
@@ -7,12 +9,16 @@
     </div>
 </div>
 
-<div class="detailsContainer" *ngIf="userFound" >
+<div class="detailsContainer" *ngIf="userFound && !invalidUser" >
     <app-main
         (resetEvent)="reset()"
         [username]="username"
         [userDetails]="userDetails"
         [userRepositories]="userRepositories"
-        [userRepoTags]="userRepoTags"
+        [isDataRetrieved]="isDataRetrieved"
+        [page_size]="page_size"
+        [page_num]="page_num"
     ></app-main>
 </div>
+
+<button (click)="reset()" class="home-button" *ngIf="userFound && !invalidUser"><img height="60px" width="60px" src = "../assets/icons8-home.svg" alt="Home"/></button>
