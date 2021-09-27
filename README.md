@@ -69,4 +69,4 @@ $ ng serve
 
 go to your preferred browser and route to localhost:4200 to open the application.
 
-Thanks! 
+Thanks! Please take care not to make too many requests for which the Github API gives an exception ( Error Code: 403 ) for requests exceeded. 
