@@ -1,9 +1,13 @@
 # GitHub Repository Listing Assessment
 
-This project was made for Fyle Internship Assessment by Leo Adlakha
+This project was made for Fyle Internship Assessment by Leo Adlakha. 
+
+![Demo Image](src/assets/DemoImage.png)
 
 ## Modifications and Assumptions
 
+- Default Size Taken - 20 ( for symmetric design purposes ).
+- Modified the design a little to accomadate 4 repositories in a row in the grid layout.
 
 # GithubRepoListing
 
